@@ -3,9 +3,9 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
   name: podinfo
-  namespace: default
+  namespace: flux-system
 spec:
   interval: 1m0s
   ref:
     branch: master
-  url: oci://ghcr.io/stefanprodan/modules/podinfo
+  url: https://stefanprodan.github.io/podinfo
