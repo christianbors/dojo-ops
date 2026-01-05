@@ -6,12 +6,13 @@ metadata:
   namespace: flux-system
 spec:
   interval: 30m0s
-  path: ./kubernetes/apps/default/echo/app
+  path: ./kubernetes/apps/kube-system/podinfo/app
   prune: true
   retryInterval: 2m0s
   sourceRef:
     kind: GitRepository
-    name: podinfo
-  targetNamespace: default
+    name: flux-system
+    namespace: flux-system
+  targetNamespace: kube-system
   timeout: 3m0s
   wait: true
