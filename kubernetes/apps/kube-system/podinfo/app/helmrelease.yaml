@@ -25,4 +25,4 @@ spec:
         rules:
           - backendRefs:
               - identifier: app
-                port: *port
+                port: 9898
